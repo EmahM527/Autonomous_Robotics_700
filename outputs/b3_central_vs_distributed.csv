@@ -1,0 +1,8 @@
+Scenario,Architecture,final_cov_pct,steps_to_90,steps_to_99,runs_reaching_99,wall_collisions_mean,wall_collisions_median,robot_near_misses,msgs_per_step
+Nominal,centralised,99.37,145.0,224.7,10/10,0.0,0.0,43.3,10.0
+Nominal,distributed,99.37,131.4,179.0,10/10,0.4,0.0,40.2,9.05
+1 robot fails @50,centralised,99.37,160.2,282.5,10/10,9.1,0.0,34.3,8.39
+1 robot fails @50,distributed,99.37,160.1,197.2,10/10,0.2,0.0,36.1,6.59
+Coordinator fails @50,centralised,63.58,,,0/10,0.0,0.0,31.7,10.0
+Coordinator fails @50 (n/a: no coordinator),distributed,99.37,131.4,179.0,10/10,0.4,0.0,40.2,9.05
+"Distributed, short comm range (1.5 m)",distributed,99.37,147.8,185.1,10/10,0.0,0.0,40.4,4.14

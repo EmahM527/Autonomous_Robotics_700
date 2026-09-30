@@ -1,0 +1,3 @@
+Policy,final_cov_pct,steps_to_90,steps_to_99,runs_reaching_99,wall_collisions_mean,wall_collisions_median,robot_near_misses,msgs_per_step
+Neural network,99.37,131.4,179.0,10/10,0.4,0.0,40.2,9.05
+Expert rules,99.5,130.2,179.9,10/10,15.6,0.0,43.2,9.14

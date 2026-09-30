@@ -1,0 +1,98 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  info ["ASR700 Assignment - Component A - autonomous navigation"]
+  title "Component A - autonomous navigation"
+  basicTimeStep 16
+  coordinateSystem "ENU"
+}
+Viewpoint {
+  orientation -0.28 0.28 0.92 1.65
+  position 0 -2.6 2.6
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  wallHeight 0.1
+}
+Solid {
+  translation -0.4500 -0.3000 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.6000 0.1 } } ]
+  name "obstacle_0"
+  boundingObject Box { size 0.3000 0.6000 0.1 }
+}
+Solid {
+  translation 0.0000 0.1000 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 1.0000 0.1 } } ]
+  name "obstacle_1"
+  boundingObject Box { size 0.2000 1.0000 0.1 }
+}
+Solid {
+  translation 0.4500 -0.6500 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.3000 0.1 } } ]
+  name "obstacle_2"
+  boundingObject Box { size 0.3000 0.3000 0.1 }
+}
+Solid {
+  translation 0.5500 0.1000 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  name "obstacle_3"
+  boundingObject Box { size 0.5000 0.2000 0.1 }
+}
+Solid {
+  translation -0.5500 0.5000 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  name "obstacle_4"
+  boundingObject Box { size 0.5000 0.2000 0.1 }
+}
+Solid {
+  translation 0.5000 0.6500 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 0.3000 0.1 } } ]
+  name "obstacle_5"
+  boundingObject Box { size 0.2000 0.3000 0.1 }
+}
+Solid {
+  translation -0.8000 -0.2000 0.001
+  rotation 1 0 0 1.5708
+  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  name "landmark_0"
+}
+Solid {
+  translation 0.0000 -0.8000 0.001
+  rotation 1 0 0 1.5708
+  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  name "landmark_1"
+}
+Solid {
+  translation 0.8000 -0.3000 0.001
+  rotation 1 0 0 1.5708
+  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  name "landmark_2"
+}
+E-puck {
+  translation -0.8000 -0.8000 0
+  rotation 0 0 1 0.6000
+  name "epuck_nav"
+  controller "a_navigator"
+  turretSlot [
+    GPS { }
+    InertialUnit { }
+    Lidar {
+      translation 0 0 0.02
+      horizontalResolution 360
+      fieldOfView 6.2832
+      numberOfLayers 1
+      minRange 0.01
+      maxRange 0.4
+      noise 0.005
+    }
+  ]
+}

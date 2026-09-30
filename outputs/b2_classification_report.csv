@@ -1,0 +1,7 @@
+,precision,recall,f1-score,support
+turn right,0.974,0.981,0.978,3389.0
+straight,0.968,0.95,0.959,2229.0
+turn left,0.974,0.978,0.976,3382.0
+accuracy,0.972,0.972,0.972,0.972
+macro avg,0.972,0.97,0.971,9000.0
+weighted avg,0.972,0.972,0.972,9000.0

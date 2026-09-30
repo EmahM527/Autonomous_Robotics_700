@@ -1,0 +1,6 @@
+Method,Cost,Std,Runs_hitting_optimum_%,Gap_to_optimum_%
+Exact optimum (enumeration),9.1805,0.0,100.0,0.0
+PSO gbest (30 runs),9.4368,0.1991,6.6667,2.7911
+PSO lbest ring (30 runs),9.2807,0.0895,13.3333,1.0913
+Greedy earliest-finish,10.0021,0.0,0.0,8.949
+Random (mean of 2000),17.2094,0.0,0.0,87.4549

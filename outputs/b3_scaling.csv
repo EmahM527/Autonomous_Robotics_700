@@ -1,0 +1,11 @@
+robots,mode,final_cov_pct,steps_to_90,steps_to_99,runs_reaching_99,wall_collisions_mean,wall_collisions_median,robot_near_misses,msgs_per_step
+1,centralised,96.54,540.11,562.86,7/10,0.4,0.0,0.0,2.0
+1,distributed,96.54,540.11,562.86,7/10,0.4,0.0,0.0,0.0
+2,centralised,99.37,243.4,326.2,10/10,0.2,0.0,2.4,4.0
+2,distributed,99.37,254.3,324.9,10/10,0.2,0.0,2.6,0.49
+3,centralised,99.25,189.1,260.67,9/10,4.8,0.0,8.9,6.0
+3,distributed,99.37,195.8,257.8,10/10,0.1,0.0,10.8,2.1
+5,centralised,99.37,145.0,224.7,10/10,0.0,0.0,43.3,10.0
+5,distributed,99.37,131.4,179.0,10/10,0.4,0.0,40.2,9.05
+8,centralised,99.37,124.3,223.2,10/10,0.0,0.0,200.1,16.0
+8,distributed,99.37,110.3,137.7,10/10,0.5,0.0,164.7,25.87

@@ -1,0 +1,4 @@
+Policy,Success_rate,Collision_rate,Timeout_rate,Avg_steps_when_success,Avg_reward,Reward_std
+Expert (teacher),0.95,0.05,0.0,77.463,8.499,3.186
+Neural network,0.915,0.08,0.005,94.918,7.812,4.114
+Random,0.0,1.0,0.0,,-5.142,0.105

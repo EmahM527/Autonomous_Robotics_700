@@ -1,0 +1,6 @@
+Topology,edges,algebraic_connectivity,iters_to_1e3,iters_30pct_loss_mean20,final_error,mean_preserved
+ring,6,1.0,21.0,28.8,2.1316282072803006e-14,True
+line,5,0.268,72.0,83.45,4.973799150320701e-14,True
+range R=7m,8,1.0,31.0,44.6,2.842170943040401e-14,True
+range R=5m,5,0.0,,,39.99236812922304,True
+complete,15,6.0,1.0,9.85,1.4210854715202004e-14,True
