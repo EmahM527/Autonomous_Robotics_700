@@ -1,0 +1,7 @@
+Controller,rise_s,overshoot_pct,settle_s,sse,stable
+"P only, low gain (Kp=1.5)",0.66,16.8274,inf,-0.1667,True
+"P only, high gain (Kp=8)",0.32,41.8877,inf,-0.0304,True
+"PD (Kp=5.0, Kd=0.6)",0.36,6.4087,inf,-0.05,True
+"PID tuned (5.0, 6.00, 0.6)",0.36,7.8951,1.64,-0.0,True
+"PID, excessive Ki (Ki=20)",0.36,11.8792,3.2,-0.0003,True
+"P only, Kp=30 (unstable)",0.32,46.2947,inf,-0.1682,False
