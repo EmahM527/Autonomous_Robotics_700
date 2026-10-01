@@ -6,14 +6,15 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
 
 WorldInfo {
-  info ["ASR700 Assignment - Component B - cooperative coverage swarm"]
+  info [
+    "ASR700 Assignment - Component B - cooperative coverage swarm"
+  ]
   title "Component B - cooperative coverage swarm"
   basicTimeStep 16
-  coordinateSystem "ENU"
 }
 Viewpoint {
-  orientation -0.28 0.28 0.92 1.65
-  position 0 -2.6 2.6
+  orientation -0.1648263605280236 0.2448944005746216 0.9554365512383765 1.2177400101637614
+  position -1.3004462806252395 -2.688155866605911 1.784072331249348
 }
 TexturedBackground {
 }
@@ -21,152 +22,320 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 2 2
-  wallHeight 0.1
 }
 Solid {
-  translation -0.4500 -0.3000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.6000 0.1 } } ]
+  translation -0.45 -0.3 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.6 0.1
+      }
+    }
+  ]
   name "obstacle_0"
-  boundingObject Box { size 0.3000 0.6000 0.1 }
+  boundingObject Box {
+    size 0.3 0.6 0.1
+  }
 }
 Solid {
-  translation 0.0000 0.1000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 1.0000 0.1 } } ]
+  translation 0 0.1 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 1 0.1
+      }
+    }
+  ]
   name "obstacle_1"
-  boundingObject Box { size 0.2000 1.0000 0.1 }
+  boundingObject Box {
+    size 0.2 1 0.1
+  }
 }
 Solid {
-  translation 0.4500 -0.6500 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.3000 0.1 } } ]
+  translation 0.45 -0.65 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.3 0.1
+      }
+    }
+  ]
   name "obstacle_2"
-  boundingObject Box { size 0.3000 0.3000 0.1 }
+  boundingObject Box {
+    size 0.3 0.3 0.1
+  }
 }
 Solid {
-  translation 0.5500 0.1000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  translation 0.55 0.1 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.2 0.1
+      }
+    }
+  ]
   name "obstacle_3"
-  boundingObject Box { size 0.5000 0.2000 0.1 }
+  boundingObject Box {
+    size 0.5 0.2 0.1
+  }
 }
 Solid {
-  translation -0.5500 0.5000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  translation -0.55 0.5 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.2 0.1
+      }
+    }
+  ]
   name "obstacle_4"
-  boundingObject Box { size 0.5000 0.2000 0.1 }
+  boundingObject Box {
+    size 0.5 0.2 0.1
+  }
 }
 Solid {
-  translation 0.5000 0.6500 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 0.3000 0.1 } } ]
+  translation 0.5 0.65 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.3 0.1
+      }
+    }
+  ]
   name "obstacle_5"
-  boundingObject Box { size 0.2000 0.3000 0.1 }
+  boundingObject Box {
+    size 0.2 0.3 0.1
+  }
 }
 Solid {
-  translation -0.8000 -0.2000 0.001
+  translation -0.8 -0.2 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_0"
 }
 Solid {
-  translation 0.0000 -0.8000 0.001
+  translation 0 -0.8 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_1"
 }
 Solid {
-  translation 0.8000 -0.3000 0.001
+  translation 0.8 -0.3 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_2"
 }
 E-puck {
-  translation -0.8400 -0.8400 0
-  rotation 0 0 1 0.0000
+  hidden position_0_0 346.06336459477035
+  hidden position_0_1 329.88675613250615
+  hidden linearVelocity_0 5.206893797513632e-07 3.529688789554253e-06 -3.572465175238904e-08
+  hidden angularVelocity_0 -0.00023260756175155084 4.246556160916081e-05 5.667021621711448e-08
+  hidden rotation_1 0 -1 0 5.795012607286494
+  hidden linearVelocity_1 8.49262019234282e-07 4.652093340223138e-06 -6.743348834563792e-07
+  hidden angularVelocity_1 -0.0002326081550026778 4.2463540935666055e-05 5.6784281410380674e-08
+  hidden rotation_2 0 0.9999999999999999 0 3.161120159167653
+  hidden linearVelocity_2 8.492540628092556e-07 4.652067457742003e-06 6.04728680814133e-07
+  hidden angularVelocity_2 -0.0002326081641245157 4.2463506078527266e-05 5.647580315698886e-08
+  translation 0.7896904671950187 0.7311708894826887 -3.1978163069544194e-05
+  rotation -0.00011937886389846972 0.00015743323851383226 -0.9999999804817309 -1.2839235423370345
   name "agent_0"
   controller "swarm_agent"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }
   ]
 }
 E-puck {
-  translation -0.7200 -0.8400 0
-  rotation 0 0 1 0.9000
+  hidden position_0_0 355.68695568895157
+  hidden position_0_1 344.00360128010107
+  hidden linearVelocity_0 -8.06028474780754e-05 0.0002367255995256129 -1.4194528459281916e-07
+  hidden angularVelocity_0 -0.015781717521824064 -0.00537352687213557 2.497913583814461e-11
+  hidden rotation_1 0 1 0 3.828578486894728
+  hidden linearVelocity_1 -0.00010747033423055309 0.00031563375360768825 -5.143502941561558e-11
+  hidden angularVelocity_1 -0.015781717496985943 -0.005373526863683483 1.3345893158005302e-10
+  hidden rotation_2 0 1 0 4.711594692403396
+  hidden linearVelocity_2 -0.00010747033454743411 0.0003156337545526203 -5.347139922354401e-11
+  hidden angularVelocity_2 -0.015781717497064945 -0.00537352686356773 -8.350321641292902e-11
+  translation 0.9012890317580073 0.1815154788121317 -3.1959122181082766e-05
+  rotation -0.0007478734126185755 0.0005353937222023468 -0.9999995770193709 -1.8989749569054952
   name "agent_1"
   controller "swarm_agent"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }
   ]
 }
 E-puck {
-  translation -0.8400 -0.7200 0
-  rotation 0 0 1 1.8000
+  hidden position_0_0 373.19443589523297
+  hidden position_0_1 385.7768409497597
+  hidden linearVelocity_0 -4.141346765052683e-05 -0.0002949048392232439 -8.84264934283539e-08
+  hidden angularVelocity_0 0.019660302799667382 -0.0027608950606091013 -4.2287537535105197e-11
+  hidden rotation_1 0 -1 0 3.796682535542218
+  hidden linearVelocity_1 -5.521785245259305e-05 -0.0003932057087744286 -6.81199804481192e-11
+  hidden angularVelocity_1 0.019660302785240204 -0.002760895058432593 -2.385956425491939e-10
+  hidden rotation_2 0 -1 0 3.780648095374688
+  hidden linearVelocity_2 -5.521785279539319e-05 -0.00039320571120151526 -6.987116873370186e-11
+  hidden angularVelocity_2 0.019660302785282278 -0.0027608950587931207 1.540214959734396e-10
+  translation 0.18600004235417358 0.1527502000458852 -3.1977451741466156e-05
+  rotation 0.00032993300213477155 -0.0003795002754504858 -0.9999998735618696 -1.4312788626246942
   name "agent_2"
   controller "swarm_agent"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }
   ]
 }
 E-puck {
-  translation -0.7200 -0.7200 0
-  rotation 0 0 1 2.7000
+  hidden position_0_0 389.65693566263053
+  hidden position_0_1 371.6822709575171
+  hidden linearVelocity_0 -4.439154279277406e-05 0.0001546940252625948 1.4511818311764403e-07
+  hidden angularVelocity_0 -0.010315422256693605 -0.0029671136405845597 4.311619026387909e-08
+  hidden rotation_1 0 1 0 0.09944661749616802
+  hidden linearVelocity_1 -5.934243141568256e-05 0.00020630912739914658 4.796579856251177e-07
+  hidden angularVelocity_1 -0.010315422771470373 -0.002967111966386495 4.132282368879733e-08
+  hidden rotation_2 0 -0.9999999999999999 0 5.308847473258069
+  hidden linearVelocity_2 -5.934242260061289e-05 0.00020630909952651678 -4.095650662664852e-07
+  hidden angularVelocity_2 -0.010315422781097284 -0.0029671119288934866 4.4823631183976274e-08
+  translation 0.720141406293117 0.7563917788570784 -3.19401510204681e-05
+  rotation 0.0010447068879805902 -0.00078436695021508 -0.9999991466776388 -1.8524998398776669
   name "agent_3"
   controller "swarm_agent"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }
   ]
 }
 E-puck {
-  translation -0.7800 -0.7800 0
-  rotation 0 0 1 3.6000
+  hidden position_0_0 285.9431749204417
+  hidden position_0_1 257.18394469451414
+  hidden linearVelocity_0 0.00018048960678994407 -0.00017524291275629352 1.381114907890916e-07
+  hidden angularVelocity_0 0.011682787409102365 0.012032564812922253 -1.784855758301449e-13
+  hidden rotation_1 0 -1 0 3.0833492098192576
+  hidden linearVelocity_1 0.00024065167497098225 -0.00023365611589454166 1.8890337251118686e-11
+  hidden angularVelocity_1 0.011682787424830048 0.012032564828241896 3.035208393025908e-10
+  hidden rotation_2 0 0.9999999999999999 0 5.85653240733068
+  hidden linearVelocity_2 0.00024065167505783538 -0.00023365611597223103 1.8341265617794657e-11
+  hidden angularVelocity_2 0.011682787424401698 0.012032564828733572 -3.0388350733701435e-10
+  translation -0.1125604442786194 0.8480634236881419 -3.195163243041241e-05
+  rotation -0.0008726533300098425 -0.002151509482535909 0.999997304737924 -0.7706521233547665
   name "agent_4"
   controller "swarm_agent"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }

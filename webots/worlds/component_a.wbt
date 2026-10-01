@@ -6,14 +6,15 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
 
 WorldInfo {
-  info ["ASR700 Assignment - Component A - autonomous navigation"]
+  info [
+    "ASR700 Assignment - Component A - autonomous navigation"
+  ]
   title "Component A - autonomous navigation"
   basicTimeStep 16
-  coordinateSystem "ENU"
 }
 Viewpoint {
-  orientation -0.28 0.28 0.92 1.65
-  position 0 -2.6 2.6
+  orientation -0.21160557106690858 -0.14014745430593653 0.9672547613452274 4.2736376402756715
+  position 1.5709627544238371 2.979755233986164 1.5397783187619347
 }
 TexturedBackground {
 }
@@ -21,76 +22,200 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 2 2
-  wallHeight 0.1
 }
 Solid {
-  translation -0.4500 -0.3000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.6000 0.1 } } ]
+  translation -0.45 -0.3 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.6 0.1
+      }
+    }
+  ]
   name "obstacle_0"
-  boundingObject Box { size 0.3000 0.6000 0.1 }
+  boundingObject Box {
+    size 0.3 0.6 0.1
+  }
 }
 Solid {
-  translation 0.0000 0.1000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 1.0000 0.1 } } ]
+  translation 0 0.1 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 1 0.1
+      }
+    }
+  ]
   name "obstacle_1"
-  boundingObject Box { size 0.2000 1.0000 0.1 }
+  boundingObject Box {
+    size 0.2 1 0.1
+  }
 }
 Solid {
-  translation 0.4500 -0.6500 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.3000 0.3000 0.1 } } ]
+  translation 0.45 -0.65 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.3 0.1
+      }
+    }
+  ]
   name "obstacle_2"
-  boundingObject Box { size 0.3000 0.3000 0.1 }
+  boundingObject Box {
+    size 0.3 0.3 0.1
+  }
 }
 Solid {
-  translation 0.5500 0.1000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  translation 0.55 0.1 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.2 0.1
+      }
+    }
+  ]
   name "obstacle_3"
-  boundingObject Box { size 0.5000 0.2000 0.1 }
+  boundingObject Box {
+    size 0.5 0.2 0.1
+  }
 }
 Solid {
-  translation -0.5500 0.5000 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.5000 0.2000 0.1 } } ]
+  translation -0.55 0.5 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.2 0.1
+      }
+    }
+  ]
   name "obstacle_4"
-  boundingObject Box { size 0.5000 0.2000 0.1 }
+  boundingObject Box {
+    size 0.5 0.2 0.1
+  }
 }
 Solid {
-  translation 0.5000 0.6500 0.05
-  children [ Shape { appearance PBRAppearance { baseColor 0.85 0.4 0.1 roughness 1 metalness 0 } geometry Box { size 0.2000 0.3000 0.1 } } ]
+  translation 0.5 0.65 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.4 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.3 0.1
+      }
+    }
+  ]
   name "obstacle_5"
-  boundingObject Box { size 0.2000 0.3000 0.1 }
+  boundingObject Box {
+    size 0.2 0.3 0.1
+  }
 }
 Solid {
-  translation -0.8000 -0.2000 0.001
+  translation -0.8 -0.2 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_0"
 }
 Solid {
-  translation 0.0000 -0.8000 0.001
+  translation 0 -0.8 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_1"
 }
 Solid {
-  translation 0.8000 -0.3000 0.001
+  translation 0.8 -0.3 0.001
   rotation 1 0 0 1.5708
-  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.75 0.15 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 0.0500 } } ]
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.75 0.15
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.002
+        radius 0.05
+      }
+    }
+  ]
   name "landmark_2"
 }
 E-puck {
-  translation -0.8000 -0.8000 0
-  rotation 0 0 1 0.6000
+  hidden position_0_0 125.30000561141523
+  hidden position_0_1 126.83498733568335
+  hidden linearVelocity_0 9.068383119024623e-05 0.00018680920093924364 1.4596319886091886e-07
+  hidden angularVelocity_0 -0.01245384201141456 0.006045537912352412 1.1934206159828729e-11
+  hidden rotation_1 0 -1 0 0.36370053217649984
+  hidden linearVelocity_1 0.00012091105823589283 0.0002490774582061008 4.370983578309922e-11
+  hidden angularVelocity_1 -0.012453842037005537 0.0060455379250579635 3.0458602540190483e-10
+  hidden rotation_2 0 1 0 1.1712811920916217
+  hidden linearVelocity_2 0.00012091105760670701 0.00024907745691783283 4.4244163872920346e-11
+  hidden angularVelocity_2 -0.012453842037311804 0.006045537924365355 -2.807226528707737e-10
+  translation 0.8054579286596626 0.8006274180048781 -3.1936102871893066e-05
+  rotation -0.001070681953497698 0.0017099170857052392 0.9999979649097863 1.1188698311962255
   name "epuck_nav"
   controller "a_navigator"
   turretSlot [
-    GPS { }
-    InertialUnit { }
+    GPS {
+    }
+    InertialUnit {
+    }
     Lidar {
       translation 0 0 0.02
       horizontalResolution 360
       fieldOfView 6.2832
       numberOfLayers 1
-      minRange 0.01
       maxRange 0.4
       noise 0.005
     }
