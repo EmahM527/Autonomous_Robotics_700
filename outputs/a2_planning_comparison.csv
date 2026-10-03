@@ -1,5 +1,5 @@
 Algorithm,Nodes_expanded,Path_length_m,Runtime_ms,Excess_vs_optimal_%,Nodes_saved_%
-Dijkstra,6232,13.481,33.0,0.0,0.0
-A* Euclidean,3207,13.481,20.3,0.0,48.5
-A* Octile,2387,13.481,15.8,0.0,61.7
-A* Manhattan,234,13.94,1.7,3.4,96.2
+Dijkstra,6232,13.481,32.8,0.0,0.0
+A* Euclidean,3207,13.481,20.2,0.0,48.5
+A* Octile,2387,13.481,15.5,0.0,61.7
+A* Manhattan,234,13.94,1.6,3.4,96.2
